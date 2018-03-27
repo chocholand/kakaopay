@@ -28,7 +28,7 @@ export default class App extends React.Component {
       <Provider {...this.props.store} className="App">
         <AppContainer>
           <header className="App-header">
-             <h1 className="App-title">Kakao Pay Trade</h1>
+             <h1 className="App-title">title</h1>
           </header>
           <TradeContainer />
         </AppContainer>

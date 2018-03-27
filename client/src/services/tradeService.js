@@ -6,3 +6,11 @@ import { axiosApi } from '../utils/axios'
 export const getTrade = () => {
   return axiosApi('/trade', 'get')
 }
+
+/**
+ * 호가 파일 초기화
+ * @returns {*}
+ */
+export const initializeTrade = () => {
+  return axiosApi('/trade', 'post')
+}

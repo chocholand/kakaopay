@@ -19,15 +19,7 @@ export function axiosApi(url, method = 'get', data, options = {}) {
 
   return axios(config)
     .catch((error) => {
-      if (error.response) {
-        const { data, status } = error.response
-        if(data.message) {
-          console.log(data.message)
-        }
-      } else if (error.request) {
-        console.log(error.request)
-      } else {
-        console.log('Error', error.message)
-      }
+      console.log('error', error)
+      throw error
     })
 }
